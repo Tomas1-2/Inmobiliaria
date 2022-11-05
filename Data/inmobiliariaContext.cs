@@ -13,4 +13,6 @@ using Inmobiliaria.Models;
         }
 
         public DbSet<Inmobiliaria.Models.Cliente> Cliente { get; set; } = default!;
+
+        public DbSet<Inmobiliaria.Models.Casa>? Casa { get; set; }
     }
