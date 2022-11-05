@@ -15,4 +15,8 @@ using Inmobiliaria.Models;
         public DbSet<Inmobiliaria.Models.Cliente> Cliente { get; set; } = default!;
 
         public DbSet<Inmobiliaria.Models.Casa>? Casa { get; set; }
+
+        public DbSet<Inmobiliaria.Models.RentalCasa>? RentalCasa { get; set; }
+        public DbSet<Inmobiliaria.Models.RentalDetail>? RentalDetail { get; set; }
+        public DbSet<Inmobiliaria.Models.RentalDetailTemp>? RentalDetailTemp { get; set; }
     }
