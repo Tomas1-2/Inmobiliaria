@@ -1,4 +1,6 @@
 using System;
+using System.IO;
+using System.Web;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,6 +11,7 @@ using Inmobiliaria.Models;
 
 namespace Inmobiliaria.Controllers
 {
+
     public class CasaController : Controller
     {
         private readonly inmobiliariaContext _context;

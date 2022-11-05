@@ -13,6 +13,11 @@
 </head>
 <body>
 
+@using (Html.BeginForm("create", "Casa", FormMethod.Post, new{ enctype = ""}))
+{
+
+@Html.AntiForgeryToken()
+
 <h4>Casa</h4>
 <hr />
 <div class="row">
@@ -36,7 +41,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="imagen" class="control-label"></label>
-                <input asp-for="imagen" class="form-control" />
+                <input type="file" name="imagen" />
                 <span asp-validation-for="imagen" class="text-danger"></span>
             </div>
             <div class="form-group form-check">
@@ -54,6 +59,8 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+}
+
 
 </body>
 </html>
